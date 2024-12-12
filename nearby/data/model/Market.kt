@@ -1,5 +1,6 @@
 package com.nwl.nearby.data.model
 
+@Serializable
 data class Market(
 
     val id: String,
@@ -7,7 +8,6 @@ data class Market(
     val name: String,
     val description: String,
     val coupons: Int,
-    val rules: List<Rule> = emptyList(),
     val latitude: Double,
     val longitude: Double,
     val address: String,
